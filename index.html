@@ -22,12 +22,12 @@
         nav { 
            background-color: white;
            padding: 15px;
-           text-allign: center;
+           text-align: center;
          }
      
         nav a {
               color: darkgreen;
-              text decoration: none;
+              text-decoration: none;
               margin: 15px;
               font-weight: bold;
             }
@@ -85,7 +85,75 @@
                text-align: center;
                padding: 25px;
             }
-        
+  #donorForm{
+    display:none;
+    width:400px;
+    margin:20px auto;
+    padding:20px;
+    background: #f9f9f9;
+    border:1px solid #ddd;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+}
+
+#donorForm h2{
+    text-align:center;
+    color:darkgreen;
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+#donorForm label{
+    display:block;
+    color:black;
+    font-weight:bold;
+    margin-top:10px;
+    margin-bottom:4px;
+}
+
+#donorForm input,
+#donorForm select{
+    width:100%;
+    padding:8px;
+    color:black;
+    background:white;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+#registerButton{
+    width:100%;
+    margin-top:15px;
+    background-color:darkgreen;
+    color:white;
+    border:none;
+    padding:10px;
+    border-radius:5px;
+    cursor:pointer;
+    transition:opacity 0.3s;
+}
+
+#registerButton:hover{
+    opacity:0.7;
+}
+
+#registerButton:active{
+    opacity:0.5;
+}
+
+#donorForm input[type="checkbox"]{
+    width:auto;
+    background-color:white;
+    accent-color: lightblue;
+}
+
+#successMessage{
+    display:none;
+    color:green;
+    font-weight:bold;
+    text-align:center;
+    margin-top:10px;
+}
          
    </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
@@ -110,7 +178,7 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
           <a class="nav-link" href="about.html">About us</a>
           <a class="nav-link" href="#">Donate</a>
-          <a class="nav-link" href="#">Donor Registration</a>
+          <a class="nav-link" href="#" onclick="showForm()">Donor Registration</a>
           <a class="nav-link" href="#">FAQ's</a>
           <a class="nav-link" href="#">Contacts</a>
         </div>
@@ -130,12 +198,91 @@
              consent at every step. 
 			 <br><h3>In Uganda, thousands suffer from kidney failure, liver failure and blindness due to cornea disease. Without donors, <br>many die waiting. WE BRIGDE THAT GAP</h3></br>
          </p>
-         <img src="E:\UCU WORK\Fundamentals of computing\Life bridge.jpeg" alt="Life Bridge">
+         <img src="Life bridge.jpeg" alt="Life Bridge">
 
-       <button type="button" class="btn">Become a Donor</button>
-	<button type="button" class="btn">I'm waiting for a transplant</button>
+    <div style="text-align:center; margin-top:20px;">
+  <button type="button" class="btn">Become a Donor</button>
+  <button type="button" class="btn">I'm waiting for a transplant</button>
+  <button type="button" class="btn" onclick="showForm()">
+    Donor Registration
+</button>
+    </div>
          
     </article>
+
+    <div id="donorForm">
+
+    <h2>Donor Registration Form</h2>
+
+    <form onsubmit="registerDonor(event)">
+
+        <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" required>
+        </div>
+
+        <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" required>
+        </div>
+
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" required>
+        </div>
+
+        <div class="form-group">
+            <label>Age</label>
+            <input type="number" min="18" required>
+        </div>
+
+        <div class="form-group">
+            <label>Blood Group</label>
+            <select required>
+                <option value="">Select Blood Group</option>
+                <option>A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>AB+</option>
+                <option>AB-</option>
+                <option>O+</option>
+                <option>O-</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Organ Willing To Donate</label>
+            <select required>
+                <option value="">Select Organ</option>
+                <option>Kidney</option>
+                <option>Liver</option>
+                <option>Heart</option>
+                <option>Lungs</option>
+                <option>Pancreas</option>
+                <option>Cornea</option>
+            </select>
+        </div>
+
+ <div class="consent-box">
+    <label>
+        <input type="checkbox" required>
+        I consent to organ donation registration.
+    </label>
+  </div>
+
+      <button ype="submit" id="registerButton">
+        Register As Donor
+      </button>
+
+    </form>
+
+    <p id="successMessage">
+        ✅ Registration Successful! Thank you for becoming a donor.
+    </p>
+
+</div>
+  
 
     <section>
         <h2>Connecting Lives Through Organ Donation</h2>
@@ -153,6 +300,33 @@
          <p>lifebridgeuganda@gmail.com</p>
          <p>0744456786</p>
     </footer>
-    
+
+<script>
+
+function showForm() {
+
+    let form = document.getElementById("donorForm");
+
+    if(form.style.display === "none" || form.style.display === ""){
+        form.style.display = "block";
+
+        form.scrollIntoView({
+            behavior: "smooth"
+        });
+
+    } else {
+        form.style.display = "none";
+    }
+}
+
+function registerDonor(event){
+
+    event.preventDefault();
+
+    document.getElementById("successMessage").style.display = "block";
+}
+
+</script>
+
   </body>
 </html>
