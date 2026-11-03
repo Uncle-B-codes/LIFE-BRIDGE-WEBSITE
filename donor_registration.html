@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Registration - LIFE BRIDGE</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color:#F4F8F5;
+            margin:0;
+            padding:40px;
+        }
+
+        .form-container{
+            width: 90%;
+            max-width: 450px;
+            margin:auto;
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 0 15px rgba(0,0,0,0.15);
+            box-sizing: border-box;
+        }
+
+        h2{
+            text-align:center;
+            color:darkgreen;
+        }
+
+        label{
+            display:block;
+            margin-top:12px;
+            font-weight:bold;
+            color:black;
+        }
+
+        input,
+        select{
+            width:100%;
+            padding:10px;
+            margin-top:5px;
+            border:1px solid #ccc;
+            border-radius:5px;
+            box-sizing:border-box;
+        }
+
+        #registerButton{
+            width:100%;
+            margin-top:20px;
+            padding:12px;
+            background-color:darkgreen;
+            color:white;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+            transition:opacity 0.3s ease;
+        }
+
+        #registerButton:hover{
+            opacity:0.7;
+        }
+
+        #registerButton:active{
+            opacity:0.5;
+        }
+
+        .success{
+            display:none;
+            color:green;
+            text-align:center;
+            margin-top:15px;
+            font-weight:bold;
+        }
+
+        @media (max-width: 600px) {
+
+            body {
+                padding: 15px;
+            }
+            .form-container {
+                width: 100%;
+                padding: 20px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+
+            input,
+            select,
+            #registerButton {
+                padding: 16px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+
+        <h2>Donor Registration</h2>
+
+        <form onsubmit="registerDonor(event)">
+
+            <label>Full Name</label>
+            <input type="text" required>
+
+            <label>Email Address</label>
+            <input type="email" required>
+
+            <label>Phone Number</label>
+            <input type="tel" required>
+
+            <label>Age</label>
+            <input type="number" min="18" required>
+
+            <label>Blood Group</label>
+
+            <select required>
+                <option>Select Blood Group</option>
+                <option>A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>AB+</option>
+                <option>AB-</option>
+                <option>O+</option>
+                <option>O-</option>
+            </select>
+
+            <label>Organ Willing To Donate</label>
+
+            <select required>
+                <option>Select Organ</option>
+                <option>Kidney</option>
+                <option>Liver</option>
+                <option>Heart</option>
+                <option>Lungs</option>
+                <option>Pancreas</option>
+                <option>Cornea</option>
+            </select>
+
+            <label>
+                <input type="checkbox" required>
+                I consent to organ donation registration.
+            </label>
+
+            <button type="submit" id="registerButton">
+                Register As Donor
+            </button>
+
+        </form>
+
+        <p class="success" id="successMessage">
+            Registration Successful!
+        </p>
+
+    </div>
+
+    <script>
+
+        function registerDonor(event){
+
+            event.preventDefault();
+
+            document.getElementById("successMessage").style.display="block";
+        }
+
+    </script>
+
+</body>
+</html>
