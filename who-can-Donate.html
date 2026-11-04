@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Who Can Donate? (Trust Builder)</title>
+    <title>Who Can Donate?</title>
     <style>
         body {
             background-color: #23272e;
@@ -41,15 +41,14 @@
             vertical-align: middle;
         }
 
-        /* Replaced .sub-item with .fact-line */
-        .fact-line {
-            display: block; /* Ensures it acts like a block element */
+        li {
+            list-style-type: none;
             font-size: 1.3rem;
             margin: 0 0 1rem 2.5rem;
             line-height: 1.4;
         }
 
-        .fact-line::before {
+        li::before {
             content: "○";
             margin-right: 0.8rem;
         }
@@ -58,23 +57,23 @@
 <body>
 
     <section class="content-container">
-        <h1>5. WHO CAN DONATE? (Trust Builder)</h1>
+        <h1>WHO CAN DONATE?</h1>
         
         <section>
             <h2>Eligibility checklist:</h2>
             
-            <!-- Changed tags and class names -->
-            <span class="fact-line">Age 18+</span>
-            <span class="fact-line">Good health</span>
-            <span class="fact-line">Voluntary decision</span>
+            <ul>
+              <li>Age 18+</li>
+              <li>Good health</li>
+              <li>Voluntary decision</li>
+            </ul>
         </section>
 
         <section>
-            <h2>Myths vs Facts table:</h2>
-            
-            <!-- Changed tags and class names -->
-            <span class="fact-line">Myth: "Doctors won't save me if I'm a donor" -> Fact: Doctors save you first</span>
-            <span class="fact-line">Myth: "My religion forbids it" -> Fact: Most religions support saving lives</span>
+            <h3>Myths vs Facts table:</h3>
+            <ul>
+              <li>Myth: "Doctors won't save me if I'm a donor" -> Fact: Doctors save you first</li>
+              <li>Myth: "My religion forbids it" -> Fact: Most religions support saving lives</li>
         </section>
         
     </section>
