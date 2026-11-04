@@ -4,15 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donor Registration - LIFE BRIDGE</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <style>
         * {
          box-sizing: border-box;
         }
+        nav {
+            background-color: darkgreen;
+            padding: 12px;
+        }
+        nav .nav-link {
+            color: white;
+            font-weight: bold;
+            margin: 5px;
+            border-radius: 5px;
+        }
 
+        nav .nav-link:hover,
+        nav .nav-link.active {
+            background-color: #2E8B57;
+            color: white;
+        }
         body{
             font-family: Arial, sans-serif;
-            background-color:#F4F8F5;
+            background-color:white;
             margin:0;
             padding:40px;
             color:#111;
@@ -27,7 +44,6 @@
             border-radius:10px;
             box-shadow:0 0 15px rgba(0,0,0,0.15);
         }
-
         h1{
             text-align:center;
             color:darkgreen;
@@ -92,14 +108,30 @@
 
             input,
             select,
-            #registerButton {
+              #registerbutton{
                 padding: 16px;
             }
+       
         }
 
     </style>
 </head>
 <body>
+ <header>
+        <h1><i class="bi bi-heart-pulse-fill"></i> LIFE BRIDGE</h1>
+    </header>
+ <nav>
+        <div class="container">
+            <div class="nav nav-pills nav-justified">
+                <a class="nav-link active" href="index.html">Home</a>
+                <a class="nav-link" href="about.html">About us</a>
+                <a class="nav-link" href="#">Donate</a>
+                <a class="nav-link" href="donor_registration.html">Donor Registration</a>
+                <a class="nav-link" href="FAQS.html">FAQ's</a>
+                <a class="nav-link" href="contacts.html">Contacts</a>
+            </div>
+        </div>
+    </nav>
 
     <main class="form-container">
 
@@ -178,6 +210,6 @@
         }
 
     </script>
-
+<script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
 </body>
 </html>
