@@ -3,87 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Who Can Donate?</title>
-    <style>
-        body {
-            background-color: #23272e;
-            color: #f2f2f2;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            padding: 40px 50px;
-            margin: 0;
-        }
-
-        .content-container {
-            max-width: 800px;
-        }
-
-        /* Main Page Heading */
-        h1 {
-            font-size: 1.6rem;
-            font-weight: 700;
-            margin-top: 0;
-            margin-bottom: 1.5rem;
-            color: #ffffff;
-        }
-
-        /* Section Headings */
-        h2 {
-            font-size: 1.3rem;
-            font-weight: 400;
-            margin-top: 1.5rem;
-            margin-bottom: 0.8rem;
-        }
-
-        h2::before {
-            content: "•";
-            font-size: 1.6rem;
-            margin-right: 0.8rem;
-            vertical-align: middle;
-        }
-      
-        ul {
-            padding: 0;
-            margin: 0;
-        }
-
-        li {
-            list-style-type: none;
-            font-size: 1.3rem;
-            margin: 0 0 1rem 2.5rem;
-            line-height: 1.4;
-        }
-
-        li::before {
-            content: "○";
-            margin-right: 0.8rem;
-        }
-    </style>
+    <title>Donate - LIFE BRIDGE</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<style>
+    body {
+        background-color: #F4F8F5;
+        color: #12372A;
+        font-family: Arial, sans-serif;
+    }
+    header {
+        background-color: #12372A;
+        color: white;
+        padding: 20px;
+    }
+    nav {
+        background-color: #5B9993;
+        padding: 12px;
+    }
+    nav a {
+        color: white;
+        font-weight: bold;
+    }
+    nav a:hover,
+    nav a.active {
+        background-color: #2E8B57;
+        color: white;
+    }
+    .donation-form {
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+    }
+    footer {
+        background-color: #12372A;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    .btn {
+        background-color: #2E8B57;
+        color: white;
+    }
+</style>
 </head>
-
 <body>
-
-    <main class="content-container">
-        <h1>WHO CAN DONATE?</h1>
-        
-        <section>
-            <h2>Eligibility checklist:</h2>
-            
-            <ul>
-              <li>Age 18+</li>
-              <li>Good health</li>
-              <li>Voluntary decision</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Myths vs Facts:</h2>
-            <ul>
-              <li>Myth: "Doctors won't save me if I'm a donor" → Fact: Doctors save you first</li>
-              <li>Myth: "My religion forbids it" → Fact: Most religions support saving lives</li>
-            </ul>
-        </section>
-        
-    </main>
-
+<header>
+     <h1><i class="bi bi-heart-pulse-fill"></i> LIFE BRIDGE</h1>
+   </header>
+<nav>
+    <div class="container">
+        <div class="nav nav-pills nav-justified">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About us</a>
+            <a class="nav-link active" href="donate.html">Donate</a>
+            <a class="nav-link" href="donor_registration.html">Donor Registration</a>
+            <a class="nav-link" href="FAQS.html">FAQ's</a>
+            <a class="nav-link" href="contacts.html">Contacts</a>
+        </div>
+    </div>
+</nav>
+<div class="container my-5">
+    <h1 class="text-center">Support LIFE BRIDGE</h1>
+    <p class="text-center">
+        Your contribution can help us make a difference
+        and support people waiting for organ transplants.
+    </p>
+    <div class="donation-form mx-auto" style="max-width: 700px;">
+        <h2 class="text-center mb-4">Donation Details</h2>
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" placeholder="Enter phone number" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email Address</label>
+                <input type="email" class="form-control" placeholder="Enter email">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Donation Amount (UGX)</label>
+                <input type="number" class="form-control" placeholder="Enter amount" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Method of Payment</label>
+                <select class="form-select" required>
+                    <option value="">Select payment method</option>
+                    <option>Mobile Money</option>
+                    <option>Bank Transfer</option>
+                    <option>Cash</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Payment Reference</label>
+                <input type="text" class="form-control" placeholder="Transaction reference (if available)">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Address / District</label>
+                <textarea class="form-control" rows="3" placeholder="Enter your address"></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn px-4">
+                    Submit Donation
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+<footer>
+    <h3>LIFE BRIDGE</h3>
+    <p>Uganda Christian University | Group J</p>
+    <p>Connecting donors and recipients with care.</p>
+    <p>lifebridgeuganda@gmail.com</p>
+    <p>0745635953</p>
+</footer>
 </body>
 </html>
