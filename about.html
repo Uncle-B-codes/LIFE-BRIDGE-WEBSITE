@@ -8,3 +8,185 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
 <style>
 
+    /* ---------- Life Bridge look---------- */
+    :root {
+        --lb-ink: #0F2A33;      /* headings and dark text */
+        --lb-teal: #0E6B6B;     /* small label above the headline */
+        --lb-coral: #A83A21;    /* card labels */
+        --lb-mist: #DCEEEE;     /* empty photo circle */
+        --lb-muted: #3F565E;    /* paragraph text */
+        --lb-bg: #F3F8F8;       /* page background */
+    }
+
+    body {
+        background: var(--lb-bg);
+        color: var(--lb-ink);
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+        line-height: 1.5;
+    }
+
+    /* ---------- Intro ---------- */
+    .about-eyebrow {
+        margin: 0 0 12px;
+        font-size: 0.875rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--lb-teal);
+    }
+    .about-title {
+        margin: 0;
+        font-size: clamp(2rem, 4vw, 2.75rem);
+        font-weight: 800;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        color: var(--lb-ink);
+    }
+    .about-text {
+        font-size: 1.125rem;
+        color: var(--lb-muted);
+    }
+    .about-text p {
+        margin: 0 0 1rem;
+    }
+    .about-text .about-closing {
+        font-weight: 600;
+        color: var(--lb-ink);
+    }
+
+    /* ---------- Mission / approach / promise cards ---------- */
+    .about-card {
+        height: 100%;
+        padding: 28px;
+        background: #fff;
+        border-radius: 20px;
+    }
+    .about-card h3 {
+        margin: 0 0 10px;
+        font-size: 0.875rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--lb-coral);
+    }
+    .about-card p {
+        margin: 0;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    /* ---------- Team ---------- */
+    .team-heading {
+        margin: 0 0 24px;
+        font-size: 1.625rem;
+        font-weight: 700;
+    }
+    .team-member {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+    .team-member img {
+        flex: none;
+        width: 72px;
+        height: 72px;
+        object-fit: cover;     
+        border-radius: 50%;
+        background: var(--lb-mist);
+    }
+    .team-member p {
+        margin: 0;
+    }
+    .team-member strong {
+        display: block;
+        font-size: 1.125rem;
+    }
+    .team-member small {
+        font-size: 0.9375rem;
+        color: var(--lb-muted);
+    }
+</style>
+</head>
+
+<body>
+
+<section id="about" class="container my-5">
+
+    <!-- INTRO: headline on the left, text on the right -->
+    <header class="row g-5 mb-5">
+        <hgroup class="col-md-6">
+            <p class="about-eyebrow">About Life Bridge</p>
+            <h2 class="about-title">Built so that no one waits for want of a connection.</h2>
+        </hgroup>
+
+        <article class="col-md-6 about-text">
+            <p>Life Bridge is a [NON-PROFIT / SOCIAL ENTERPRISE] that helps people who want to donate and people who need a transplant find the right path, safely and fairly.</p>
+            <p>We work alongside licensed transplant centers, ethics committees and donor families. We do not make medical decisions or allocate organs. We make the process clearer, kinder and easier to trust.</p>
+            <p>Life Bridge began with a painful fact: people are dying while organs that could have saved them are out of reach, mainly because there are too few donors or too little time to transport the organs that exist.</p>
+            <p>It felt wrong that the gap between a willing donor and a waiting patient could be decided by a delay, a missed call or a road that took too long, so we set out to close that gap.</p>
+            <p>We started by making it easier for people to say yes to donation, and for their families to know and honor that choice. We then worked with transplant centers and transport partners so that when an organ is available, it moves quickly and safely to the person who is waiting.</p>
+            <p>We are not doctors, and we don't decide who receives an organ. Clinicians do that, under fair rules. Our job is to make the bridge between a generous yes and a second chance shorter and faster.</p>
+            <p class="about-closing">Behind every number on this page is a donor who chose to give, a family who said yes in their hardest hour, and someone who woke up to more time. That is who Life Bridge is built for.</p>
+        </article>
+    </header>
+
+    
+    <ul class="row g-4 list-unstyled mb-5">
+        <li class="col-md-4">
+            <article class="about-card">
+                <h3>Our mission</h3>
+                <p>To connect willing donors with patients in need through a process people can trust.</p>
+            </article>
+        </li>
+        <li class="col-md-4">
+            <article class="about-card">
+                <h3>Our approach</h3>
+                <p>Consent first, medicine led by clinicians, and every decision explained in plain language.</p>
+            </article>
+        </li>
+        <li class="col-md-4">
+            <article class="about-card">
+                <h3>Our promise</h3>
+                <p>No payment for organs, no shortcuts and no one treated as a statistic.</p>
+            </article>
+        </li>
+    </ul>
+
+   
+    <h3 class="team-heading">The people behind it</h3>
+    <ul class="row g-4 list-unstyled">
+        <li class="col-sm-6 col-lg-4 team-member">
+            <img src="C:\Users\Admin\Desktop\pic\lucy.jpeg" alt="lucy" width="72" height="72">
+            <p><strong>Lucy Faith.M</strong><small>[B39059]</small></p>
+        </li>
+        <li class="col-sm-6 col-lg-4 team-member">
+            <img src="C:\Users\Admin\Desktop\pic\profile.jpeg" alt="profile" width="72" height="72">
+            <p><strong>Patience Margaret.N</strong><small>[B40157]</small></p>
+        </li>
+        <li class="col-sm-6 col-lg-4 team-member">
+            <img src="C:\Users\Admin\Desktop\pic\jonathan.jpeg" alt="jonathan" width="72" height="72">
+            <p><strong>Opio Jonathan</strong><small>[B39675]</small></p>
+        </li>
+        <li class="col-sm-6 col-lg-4 team-member">
+            <img src="C:\Users\Admin\Desktop\pic\arturo.jpeg" alt="arturo" width="72" height="72">
+            <p><strong>Matovu Arthur</strong><small>[B39100]</small></p>
+        </li>
+        <li class="col-sm-6 col-lg-4 team-member">
+            <img src="C:\Users\Admin\Desktop\pic\shalom.jpeg" alt="Arthur Lubowa S" width="72" height="72">
+            <p><strong>Arthur Lubowa.S</strong><small>[B39125]</small></p>
+        </li>
+        <li class="col-sm-6 col-lg-4 team-member">
+            <img src="C:\Users\Admin\Desktop\pic\bosco.jpeg" alt="Bosco Ahimbisibwe" width="72" height="72">
+            <p><strong>Bosco Ahimbisibwe</strong><small>[B39926]</small></p>
+        </li>
+        <li class="col-sm-6 col-lg-4 team-member">
+            <img src="C:\Users\Admin\Desktop\pic\lilly.jpeg" alt="lilly" width="72" height="72">
+            <p><strong>Moru Lilly</strong><small>[B41638]</small></p>
+        </li>
+    </ul>
+
+</section>
+
+<script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+</body>
+</html>
