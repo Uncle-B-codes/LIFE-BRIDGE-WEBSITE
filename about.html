@@ -1,119 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset ="UTF-8">
-<meta name="width=device-width,initial-scale=1.0">
-<title>life bridge</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Life Bridge</title>
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
- <style>
-  body {
-            margin: 0;
-            background-color: #12372A;
-            font-family: Arial, sans-serif;
-        }
-       nav {
-            background-color: #12372A;
-            padding: 12px;
-        }
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<style>
+    body {
+        background-color: green;
+    }
 
-        nav .nav-link {
-            color: white;
-            font-weight: bold;
-            margin: 5px;
-            border-radius: 5px;
-        }
+    .about-eyebrow {
+        color: blue;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
 
-        nav .nav-link:hover,
-        nav .nav-link.active {
-            background-color: #2E8B57;
-            color: white;
-        }
-  </style>
+    .about-card {
+        background-color: black;
+        border-radius: 20px;
+        padding: 28px;
+        height: 100%;
+    }
+
+    .about-card h3 {
+        color: red;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    .team-member img {
+        width: 72px;
+        height: 72px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+</style>
 </head>
-<body class="bg-light">
-<nav>
-        <div class="container">
-            <div class="nav nav-pills nav-justified">
-                <a class="nav-link active" href="index.html">Home</a>
-                <a class="nav-link" href="about.html">About us</a>
-                <a class="nav-link" href="#">Donate</a>
-                <a class="nav-link" href="#">Donor Registration</a>
-                <a class="nav-link" href="#">FAQ's</a>
-                <a class="nav-link" href="#">Contacts</a>
-            </div>
-        </div>
-    </nav>
-<section id="about" class="container">
 
-  <header class="row g-5 mb-5">
-  <h1 class="text-success"> ABOUT LIFE BRIDGE</h1>
-    <h2 class="col-lg-6 display-6 fw-bold">Built so that no one waits for want of a connection.</h2>
-    <article class="col-lg-6 fs-5 text-secondary">
-      <p>Life Bridge is a [NON-PROFIT / SOCIAL ENTERPRISE] that helps people who want to donate and people who need a transplant find the right path, safely and fairly.</p>
-      <p>We work alongside licensed transplant centers, ethics committees and donor families. We do not make medical decisions or allocate organs. We make the process clearer, kinder and easier to trust.</p>
-      <p> Life bridge began with  painful fact: people are dying while organs that could have saved them are out of reach mainly due too few donors or limited time to transport the existing organs.</p>
-      <p>It felt wrong that the gap between a willing donor and a waiting patient could be decided by a delay, a missed call or a road that took too long and so we set out to close that gap.</p>
-<p> We started by making it easier for people to say yes to donation, and for their families to know and honor that choice. We then worked with transplant centers and transport partners so that when an organ is available, it moves quickly and safely to the person who is waiting.
-We are not doctors, and we don't decide who receives an organ. Clinicians do that, under fair rules.</p> 
-<p>Our job is to make sure the bridge between a generous yes and a second chance is shorter and faster.
-Behind every number on this page is a donor who chose to give, a family who said yes in their hardest hour, and someone who woke up to more time. That is who Life Bridge is built for.</p>
-    </article>
-  </header>
+<body>
+<div id="header"></div>
+<div id="navbar"></div>    
+<section id="about" class="container my-5">
 
-  <ul class="row g-4 list-unstyled mb-5">
-    <li class="col-md-4">
-      <article class="card h-100 border-0 rounded-4 p-4">
-        <h3 class="h6 text-uppercase text-danger">Our mission</h3>
-        <p class="fs-5 mb-0">To connect willing donors with patients in need through a process people can trust.</p>
-      </article>
-    </li>
-    <li class="col-md-4">
-      <article class="card h-100 border-0 rounded-4 p-4">
-        <h3 class="h6 text-uppercase text-danger">Our approach</h3>
-        <p class="fs-5 mb-0">Consent first, medicine led by clinicians, and every decision explained in plain language.</p>
-      </article>
-    </li>
-    <li class="col-md-4">
-      <article class="card h-100 border-0 rounded-4 p-4">
-        <h3 class="h6 text-uppercase text-danger">Our promise</h3>
-        <p class="fs-5 mb-0">No payment for organs, no shortcuts and no one treated as a statistic.</p>
-      </article>
-    </li>
-  </ul>
+    <header class="row g-5 mb-5">
+        <hgroup class="col-md-6">
+            <p class="about-eyebrow">About Life Bridge</p>
+            <h2 class="display-5 fw-bold">Built so that no one waits for want of a connection.</h2>
+        </hgroup>
 
-  <h3 class="h4 fw-bold mb-4">The people behind it</h3>
-  <ul class="row g-4 list-unstyled">
-    <li class="col-md-3 d-flex align-items-center gap-3">
-      <span class="rounded-circle bg-success-subtle text-success-emphasis fw-bold d-inline-flex align-items-center justify-content-center flex-shrink-0" style="width:72px;height:72px">AB</span>
-      <p class="mb-0"><strong class="d-block fs-5">Lucy Faith.M</strong>[B39059]</p>
-    </li>
-    <li class="col-md-3 d-flex align-items-center gap-3">
-      <span class="rounded-circle bg-success-subtle text-success-emphasis fw-bold d-inline-flex align-items-center justify-content-center flex-shrink-0" style="width:72px;height:72px">CD</span>
-      <p class="mb-0"><strong class="d-block fs-5">Patience Margaret.N</strong>[B40157]</p>
-    </li>
-    <li class="col-md-3 d-flex align-items-center gap-3">
-      <span class="rounded-circle bg-success-subtle text-success-emphasis fw-bold d-inline-flex align-items-center justify-content-center flex-shrink-0" style="width:72px;height:72px">EF</span>
-      <p class="mb-0"><strong class="d-block fs-5">Opio Jonathan</strong>[B39675]</p>
-    </li>
- <li class="col-md-3 d-flex align-items-center gap-3">
-      <span class="rounded-circle bg-success-subtle text-success-emphasis fw-bold d-inline-flex align-items-center justify-content-center flex-shrink-0" style="width:72px;height:72px">AB</span>
-      <p class="mb-0"><strong class="d-block fs-5">Matovu Arthur</strong>[B39100]</p>
-    </li>
-    <li class="col-md-3 d-flex align-items-center gap-3">
-      <span class="rounded-circle bg-success-subtle text-success-emphasis fw-bold d-inline-flex align-items-center justify-content-center flex-shrink-0" style="width:72px;height:72px">CD</span>
-      <p class="mb-0"><strong class="d-block fs-5">Arthur Lubowa.S</strong>[39125]</p>
-    </li>
-    <li class="col-md-3 d-flex align-items-center gap-3">
-      <span class="rounded-circle bg-success-subtle text-success-emphasis fw-bold d-inline-flex align-items-center justify-content-center flex-shrink-0" style="width:72px;height:72px">EF</span>
-      <p class="mb-0"><strong class="d-block fs-5">Bosco Ahimbisibwe</strong>[39926]</p>
-    </li>
-  <li class="col-md-3 d-flex align-items-center gap-3">
-      <span class="rounded-circle bg-success-subtle text-success-emphasis fw-bold d-inline-flex align-items-center justify-content-center flex-shrink-0" style="width:72px;height:72px">EF</span>
-      <p class="mb-0"><strong class="d-block fs-5">Moru Lilly</strong>[41638]</p>
-    </li>
-  </ul>
+        <article class="col-md-6 fs-5 text-secondary">
+            <p>Life Bridge is a [NON-PROFIT / SOCIAL ENTERPRISE] that helps people who want to donate and people who need a transplant find the right path, safely and fairly.</p>
+            <p>We work alongside licensed transplant centers, ethics committees and donor families. We do not make medical decisions or allocate organs. We make the process clearer, kinder and easier to trust.</p>
+            <p>Life Bridge began with a painful fact: people are dying while organs that could have saved them are out of reach, mainly because there are too few donors or too little time to transport the organs that exist.</p>
+            <p>It felt wrong that the gap between a willing donor and a waiting patient could be decided by a delay, a missed call or a road that took too long, so we set out to close that gap.</p>
+            <p>We started by making it easier for people to say yes to donation, and for their families to know and honor that choice. We then worked with transplant centers and transport partners so that when an organ is available, it moves quickly and safely to the person who is waiting.</p>
+            <p>We are not doctors, and we don't decide who receives an organ. Clinicians do that, under fair rules. Our job is to make the bridge between a generous yes and a second chance shorter and faster.</p>
+            <p class="text-dark">Behind every number on this page is a donor who chose to give, a family who said yes in their hardest hour, and someone who woke up to more time. That is who Life Bridge is built for.</p>
+        </article>
+    </header>
+
+    <ul class="row g-4 list-unstyled mb-5">
+        <li class="col-md-4">
+            <article class="about-card">
+                <h3>Our mission</h3>
+                <p class="fs-5 mb-0">To connect willing donors with patients in need through a process people can trust.</p>
+            </article>
+        </li>
+        <li class="col-md-4">
+            <article class="about-card">
+                <h3>Our approach</h3>
+                <p class="fs-5 mb-0">Consent first, medicine led by clinicians, and every decision explained in plain language.</p>
+            </article>
+        </li>
+        <li class="col-md-4">
+            <article class="about-card">
+                <h3>Our promise</h3>
+                <p class="fs-5 mb-0">No payment for organs, no shortcuts and no one treated as a statistic.</p>
+            </article>
+        </li>
+    </ul>
+
+    <h3 class="mb-4">The people behind it</h3>
+    <ul class="row g-4 list-unstyled">
+        <li class="col-sm-6 col-lg-4 team-member d-flex align-items-center gap-3">
+            <img src="lucy.jpeg" alt="lucy">
+            <p class="mb-0"><strong class="d-block">Lucy Faith.M</strong><small class="text-secondary">[B39059]</small></p>
+        </li>
+        <li class="col-sm-6 col-lg-4 team-member d-flex align-items-center gap-3">
+            <img src="profile.jpeg" alt="profile">
+            <p class="mb-0"><strong class="d-block">Patience Margaret.N</strong><small class="text-secondary">[B40157]</small></p>
+        </li>
+        <li class="col-sm-6 col-lg-4 team-member d-flex align-items-center gap-3">
+            <img src="jonathan.jpeg" alt="jonathan">
+            <p class="mb-0"><strong class="d-block">Opio Jonathan</strong><small class="text-secondary">[B39675]</small></p>
+        </li>
+        <li class="col-sm-6 col-lg-4 team-member d-flex align-items-center gap-3">
+            <img src="arturo.jpeg" alt="arturo">
+            <p class="mb-0"><strong class="d-block">Matovu Arthur</strong><small class="text-secondary">[B39100]</small></p>
+        </li>
+        <li class="col-sm-6 col-lg-4 team-member d-flex align-items-center gap-3">
+            <img src="shalom.jpeg" alt="shalom">
+            <p class="mb-0"><strong class="d-block">Arthur Lubowa.S</strong><small class="text-secondary">[39125]</small></p>
+        </li>
+        <li class="col-sm-6 col-lg-4 team-member d-flex align-items-center gap-3">
+            <img src="bosco.jpeg" alt="bosco">
+            <p class="mb-0"><strong class="d-block">Bosco Ahimbisibwe</strong><small class="text-secondary">[39926]</small></p>
+        </li>
+        <li class="col-sm-6 col-lg-4 team-member d-flex align-items-center gap-3">
+            <img src="lilly.jpeg" alt="lilly">
+            <p class="mb-0"><strong class="d-block">Moru Lilly</strong><small class="text-secondary">[41638]</small></p>
+        </li>
+    </ul>
 
 </section>
-<script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+<div id="footer"></div>
+<script src="load-components.js"></script>    
 </body>
 </html>
